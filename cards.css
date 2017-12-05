@@ -1,0 +1,7 @@
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+}
+.textarea-container{
+    border: 1px solid black;
+}
