@@ -18,5 +18,11 @@ function makeCard () {
     let cardAppend = flexContainer.appendChild(card);
     card.appendChild(cardTextNode);
     console.log("here");
+    let deleteButton = document.createElement("button");
+    deleteButton.innerHTML = "delete";
+    card.appendChild(deleteButton);
+    deleteButton.addEventListener("click",()=>card.parentNode.removeChild(card));
+    
     
 };
+

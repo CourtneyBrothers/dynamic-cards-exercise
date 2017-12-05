@@ -1,7 +1,19 @@
-.flex-container{
-    display:flex;
+#flex-container{
+    display: flex;
     justify-content: space-between;
+
+
 }
-.textarea-container{
+
+#textarea-container{
+    
+    align-self: auto;
     border: 1px solid black;
+   
+}
+.styleCard {
+    border: 1px solid blue;
+    height: 50vh;
+    width: 50vh;
+
 }
