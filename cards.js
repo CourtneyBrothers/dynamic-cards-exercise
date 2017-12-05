@@ -1,23 +1,22 @@
-let inputFromTextarea = document.getElementById("input-for-cards");
-console.log(inputFromTextarea);
-console.log(inputFromTextarea.value);
+
 
 
 
 let flexContainer = document.getElementById("flex-container");
 let createButton = document.getElementById("create");
 
-createButton.addEventListener("cick", makeCard());
-console.log(inputFromTextarea.value);
+createButton.addEventListener("click", makeCard);
+
 
 function makeCard () {
-    inputFromTextarea.onkeyup = ()=> console.log(cardText);
+    let inputFromTextarea = document.getElementById("input-for-cards");
     let cardText = inputFromTextarea.value;
     let cardTextNode = document.createTextNode(cardText);
-    var card = document.createElement('div');
-    card.className="card";
-
-    flexContainer.appendChild(card);
+    console.log(cardTextNode);
+    let card = document.createElement('div');
+    card.setAttribute("class", "styleCard");
+    let cardAppend = flexContainer.appendChild(card);
+    card.appendChild(cardTextNode);
     console.log("here");
     
 };
